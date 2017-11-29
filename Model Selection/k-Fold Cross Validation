@@ -1,0 +1,5 @@
+# Insert k-Fold Cross Validation to algorithms to validate model across k batch samples
+from sklearn.model_selection import cross_val_score
+accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10)
+accuracies.mean()
+accuracies.std()
