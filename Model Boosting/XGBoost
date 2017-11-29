@@ -1,0 +1,4 @@
+# Use XGBoost on the Training set for gradient boosting
+from xgboost import XGBClassifier
+classifier = XGBClassifier()
+classifier.fit(X_train, y_train)
